@@ -364,8 +364,8 @@ select:focus {
 .scroll-button {
   display: grid;
   place-items: center;
-  width: 96px;
-  height: 96px;
+  width: 150px;
+  height: 72px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
@@ -437,8 +437,8 @@ select:focus {
   }
 
   .scroll-button {
-    width: 82px;
-    height: 82px;
+    width: 118px;
+    height: 64px;
     font-size: 19px;
   }
 }
