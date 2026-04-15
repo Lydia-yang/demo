@@ -27,6 +27,20 @@
     });
   });
 
+  document.querySelectorAll(".button, .scroll-button").forEach(function (button) {
+    button.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
+
+    button.addEventListener("selectstart", function (event) {
+      event.preventDefault();
+    });
+
+    button.addEventListener("dragstart", function (event) {
+      event.preventDefault();
+    });
+  });
+
   window.addEventListener("resize", updateControls);
   window.addEventListener("load", updateControls);
   updateControls();
