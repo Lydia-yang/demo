@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout | Precision Steel Nail</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">ForgePoint Supply</div>
+      <a class="header-note" href="index.html">Back to product</a>
+    </header>
+
+    <main class="page">
+      <p class="eyebrow">Checkout</p>
+      <h1>Complete Your Order</h1>
+      <p class="lead">Enter your shipping and payment details to place the order.</p>
+
+      <section class="checkout-layout" aria-label="Checkout form and order summary">
+        <form class="form-panel" action="success.html">
+          <h2 class="section-title">Shipping Details</h2>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="first-name" autocomplete="given-name" value="Alex" required>
+            </div>
+            <div class="field">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="last-name" autocomplete="family-name" value="Morgan" required>
+            </div>
+            <div class="field full">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" value="alex@example.com" required>
+            </div>
+            <div class="field full">
+              <label for="address">Street Address</label>
+              <input id="address" name="address" autocomplete="street-address" value="42 Workshop Lane" required>
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input id="city" name="city" autocomplete="address-level2" value="Austin" required>
+            </div>
+            <div class="field">
+              <label for="state">State</label>
+              <select id="state" name="state" autocomplete="address-level1" required>
+                <option>CA</option>
+                <option selected>TX</option>
+                <option>NY</option>
+                <option>WA</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="zip">ZIP Code</label>
+              <input id="zip" name="zip" autocomplete="postal-code" value="78701" required>
+            </div>
+            <div class="field">
+              <label for="card">Card Number</label>
+              <input id="card" name="card" inputmode="numeric" value="4242 4242 4242 4242" required>
+            </div>
+          </div>
+
+          <button class="button" type="submit">Check Out</button>
+        </form>
+
+        <aside class="summary-panel" aria-label="Order summary">
+          <h2 class="section-title">Order Summary</h2>
+          <div class="summary-item">
+            <img src="nail.png" alt="Precision steel nail">
+            <div>
+              <p class="summary-name">Precision Steel Nail</p>
+              <p class="summary-meta">100-pack | Quantity 1</p>
+            </div>
+          </div>
+          <div class="totals">
+            <div class="total-row">
+              <span>Subtotal</span>
+              <span>$4.99</span>
+            </div>
+            <div class="total-row">
+              <span>Shipping</span>
+              <span>$0.00</span>
+            </div>
+            <div class="total-row">
+              <span>Tax</span>
+              <span>$0.41</span>
+            </div>
+            <div class="total-row grand">
+              <span>Total</span>
+              <span>$5.40</span>
+            </div>
+          </div>
+          <p class="fine-print">Demo checkout only. No payment is processed.</p>
+        </aside>
+      </section>
+    </main>
+
+    <div class="scroll-controls" aria-label="Page scroll controls">
+      <button class="scroll-button" type="button" data-scroll="up" aria-label="Scroll up">Up</button>
+      <button class="scroll-button" type="button" data-scroll="down" aria-label="Scroll down">Down</button>
+    </div>
+    <script src="scroll-controls.js"></script>
+  </body>
+</html>
