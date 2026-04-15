@@ -147,6 +147,9 @@ h1 {
   font-weight: 800;
   text-decoration: none;
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .button:hover,
@@ -371,6 +374,9 @@ select:focus {
   font-weight: 800;
   cursor: pointer;
   box-shadow: 0 10px 24px rgba(23, 33, 38, 0.14);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .scroll-button:hover,
